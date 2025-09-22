@@ -1,0 +1,15 @@
+{
+  "name": "Wiki Clarity",
+  "short_name": "Clarity",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "/static/assets/loogo.png",
+      "sizes": "200x60",
+      "type": "image/png"
+    }
+  ]
+}

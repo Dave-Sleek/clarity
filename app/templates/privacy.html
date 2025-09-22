@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - Wiki Clarity</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <style>
+    /* same dark mode + glass styles as before */
+    :root {
+      --glass-bg: rgba(255, 255, 255, 0.08);
+      --glass-border: rgba(255, 255, 255, 0.16);
+      --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    body.dark-mode {
+      background:
+        radial-gradient(1200px 600px at 10% -20%, #2c3eaa33, transparent 60%),
+        radial-gradient(1200px 600px at 100% 0%, #00997a33, transparent 60%),
+        #0a0d1f;
+      color: #e9eefc;
+      --glass-bg: rgba(0, 0, 0, 0.35);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    body.dark-mode .card { color: #f0f4ff; }
+
+    .footer { color:#ffffff; }
+  </style>
+</head>
+<body class="dark-mode-toggle">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card glass-card">
+          <div class="card-header text-center">
+            <h1><i class="bi bi-shield-lock"></i> Privacy Policy</h1>
+            <p class="mb-0">Last Updated: <span id="current-date"></span></p>
+          </div>
+          <div class="card-body">
+            <!-- Policy Content -->
+            <div class="policy-section">
+              <h2>1. Introduction</h2>
+              <p>Wiki Clarity ("we", "us", or "our") operates this web application (the "Service"). 
+              This page explains our policies regarding the collection, use, and disclosure of data when you use our Service.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>2. Information Collection</h2>
+              <h5>We collect:</h5>
+              <ul>
+                <li><strong>Search queries</strong> - Processed through Wikimedia APIs</li>
+                <li><strong>Usage data</strong> - Pages visited, interactions (anonymous)</li>
+                <li><strong>Device information</strong> - Browser type, OS version (for compatibility)</li>
+              </ul>
+              
+              <h5 class="mt-4">We do NOT collect:</h5>
+              <ul>
+                <li>Personal identities</li>
+                <li>Payment information</li>
+                <li>Precise location data</li>
+              </ul>
+            </div>
+
+            <div class="policy-section">
+              <h2>3. How We Use Data</h2>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Purpose</th>
+                      <th>Data Type</th>
+                      <th>Storage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Deliver articles and extracts</td>
+                      <td>Search queries</td>
+                      <td>Not stored</td>
+                    </tr>
+                    <tr>
+                      <td>Save user preferences</td>
+                      <td>Language/Dark mode</td>
+                      <td>Local storage</td>
+                    </tr>
+                    <tr>
+                      <td>Improve service</td>
+                      <td>Anonymous usage</td>
+                      <td>30 days</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="policy-section">
+              <h2>4. Third-Party Services</h2>
+              <p>We rely on:</p>
+              <ul>
+                <li><strong>Wikimedia APIs</strong> - <a href="https://foundation.wikimedia.org/wiki/Privacy_policy" target="_blank">Privacy Policy</a></li>
+                <li><strong>Cloudflare</strong> - For DNS and security</li>
+                <li><strong>jsPDF/html2canvas</strong> - Client-side processing only</li>
+              </ul>
+            </div>
+
+            <div class="policy-section">
+              <h2>5. Your Rights</h2>
+              <p>Under data protection laws (GDPR/CCPA), you can:</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card mb-3 bg-transparent">
+                    <div class="card-body">
+                      <h5><i class="bi bi-trash"></i> Delete Data</h5>
+                      <p>Clear your search history and notes via the app settings.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card mb-3 bg-transparent">
+                    <div class="card-body">
+                      <h5><i class="bi bi-eye"></i> Access Data</h5>
+                      <p>View stored data in your browser's local storage.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="policy-section">
+              <h2>6. Changes to This Policy</h2>
+              <p>We may update this Privacy Policy. We will notify you by updating the "Last Updated" date.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>7. Contact Us</h2>
+              <p>For privacy concerns: <a href="mailto:dave.truth87@gmail.com">Dave</a></p>
+            </div>
+
+            <img src="{{ logo }}" alt="Site logo">
+
+            <div class="alert alert-info mt-4">
+              <i class="bi bi-info-circle"></i> This is an unofficial application not affiliated with the Wikimedia Foundation.
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <a href="/" class="btn btn-primary">
+              <i class="bi bi-arrow-left"></i> Back to App
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <div class="position-fixed bottom-0 end-0 m-3">
+    <button id="darkModeToggle" class="btn btn-dark rounded-circle p-2">
+      <i class="bi bi-moon-stars"></i>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const storedDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (storedDarkMode) {
+      document.body.classList.add('dark-mode');
+      darkModeToggle.innerHTML = '<i class="bi bi-sun"></i>';
+    }
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDark);
+      darkModeToggle.innerHTML = isDark ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon-stars"></i>';
+    });
+  </script>
+</body>
+</html>
